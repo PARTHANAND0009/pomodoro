@@ -9,7 +9,7 @@ so basically this is a pomodoro timer i made. nothing fancy just gets the job do
 - timer (25/5/15 mins for pomo, short break, long break)
 - session dots so u know how many rounds u did
 - task list to write down what ur working on
-- youtube embed thing — paste a link and the video loads right there, good for watching lectures while timing urself
+- youtube embed thing  paste a link and the video loads right there, good for watching lectures while timing urself
 - notes section (saves automatically so it doesnt disappear when u refresh)
 - lil toast popups when a session ends
 
