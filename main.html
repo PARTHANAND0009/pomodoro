@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pomodoro thing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>pomodoro<span>.</span></h1>
+  <p class="sub">stay focused man idk</p>
+
+  <!-- tabs -->
+  <div id="tabs">
+    <button class="tab active" onclick="switchMode('pomo')">pomodoro</button>
+    <button class="tab" onclick="switchMode('short')">short break</button>
+    <button class="tab" onclick="switchMode('long')">long break</button>
+  </div>
+
+  <!-- timer -->
+  <div id="timer-box">
+    <div id="timer">25:00</div>
+    <p id="mode-txt">focus !!</p>
+  </div>
+
+  <div id="btns">
+    <button id="startbtn" onclick="startStop()">start</button>
+    <button onclick="resetTimer()">reset</button>
+  </div>
+
+  <div id="rounds">
+    <span>rounds: </span>
+    <div class="dot" id="dot1"></div>
+    <div class="dot" id="dot2"></div>
+    <div class="dot" id="dot3"></div>
+    <div class="dot" id="dot4"></div>
+  </div>
+
+  <hr>
+
+  <div id="tasks-section">
+    <h3>tasks</h3>
+    <div id="task-row">
+      <!-- you're reading this lol -->
+      <input type="text" id="task-input" placeholder="what r u doing rn">
+      <button onclick="addTask()">add</button>
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+
+  <hr>
+
+  <div id="yt-section">
+    <h3>yt video (for lectures n stuff)</h3>
+    <div id="yt-row">
+      <input type="text" id="yt-input" placeholder="paste yt link here">
+      <button onclick="loadVideo()">load</button>
+      <button onclick="clearVideo()">clear</button>
+    </div>
+
+    <div id="video-box">
+      <p id="no-vid-msg">no video loaded lol</p>
+      <iframe id="yt-frame" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="notes-section">
+    <h3>notes</h3>
+    <textarea id="notes-box" placeholder="write stuff here..."></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
